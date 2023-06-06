@@ -1,34 +1,106 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Navigation styles */
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-    float: left;
+  display: inline;
+  margin-right: 10px;
 }
-nav ul li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-nav ul li a:hover{
-    background-color: grey}
 
-    footer {
-        text-align: center;
-        color: white;
-        border-top: 2px solid black;
-        background-color:darkgrey;
-        font-size: 15px;
-        font-weight: bold;
-        width:100%; }
-           
-    footer p {
-        text-align: center;
-               
-        }
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Promotion section styles */
+.promotion {
+  margin-bottom: 30px;
+}
+
+.promotion img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Popular destinations styles */
+.destinations {
+  margin-bottom: 30px;
+}
+
+.destinations li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.destinations img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+}

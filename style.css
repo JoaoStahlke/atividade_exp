@@ -104,3 +104,15 @@ footer {
     font-size: 14px;
   }
 }
+
+.parceiros {
+    display:flex; 
+    justify-content:space-evenly; 
+    width: 100%;
+    height: auto;}
+
+.parceiros img {
+    width: 500px;
+    height: 200px;
+    border: solid 3px red
+}
